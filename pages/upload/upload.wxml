@@ -1,0 +1,15 @@
+<!--pages/upload/upload.wxml-->
+<view>选择图片或拍照</view>
+<van-uploader file-list="{{ fileList }}"
+accept="image"
+capture="['album', 'camera']"
+upload-text="上传图片或拍照"
+bind:after-read="afterRead" 
+bind:delete="delete" 
+multiple="{{true}}"/>
+
+<van-row>
+  <van-col span="8">
+    <van-button round type="primary" bindtap="uploadImg"> 上传 </van-button>
+  </van-col>
+</van-row>
