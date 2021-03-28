@@ -30,9 +30,9 @@ Page({
 
   uploadImg:function() {
     var _this = this;
-    var imgUrl = [];
+    console.log(_this);
     // 多张图片上传
-    for (var i = 0; i < _this.file.length; i++) {
+    for (var i = 0; i < _this.data.fileList.length; i++) {
       wx.uploadFile({
         url:'https://www.astoc.tk:4431/mo/upload/upload.php', //写自己的路径
         filePath: _this.data.fileList[i].url,
@@ -42,8 +42,8 @@ Page({
         },
         success: function (res) {
           console.log(res)
-          const { fileList = [] } = _this.data;
-          fileList.push({ ...file, url: res.data });
+          const { fileList = [] } = _this.data.fileList;
+          // fileList.push({ ...file, url: res.data });
           // _this.setData({ fileList });
         },
       })
