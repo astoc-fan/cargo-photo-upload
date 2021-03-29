@@ -2,14 +2,8 @@
   <view class="logo">
     <image class = 'image' src="../../img/logo.png" alt=""></image>
   </view>
-  <view class = "functions">
     <navigator url="/pages/upload/upload">
       <van-icon color="red" size="200rpx" name="upgrade" />
-      <view>拍照上传</view>
+      <view class="logo">拍照上传</view>
     </navigator>
-    <navigator url="/pages/upload/upload">
-      <van-icon color="red" size="200rpx" name="upgrade" />
-      <view>拍照上传</view>
-    </navigator>
-  </view>
 </view>

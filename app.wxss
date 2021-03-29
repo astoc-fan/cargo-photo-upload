@@ -1,4 +1,9 @@
 .container {
-  position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
 }
